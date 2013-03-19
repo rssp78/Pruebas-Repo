@@ -1,0 +1,553 @@
+@charset "utf-8";
+
+
+
+/*ESTRUCTURA*/
+
+body {
+	background-color: #000000;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	background-image: url(imagenes/fondoweb.jpg);
+        background-repeat:no-repeat;
+	background-position: center top;
+}
+
+#contenido {
+	margin-top: 0px;
+	padding-top: 0px;
+	
+}
+#envoltorio {
+	text-align: left;
+	width: 1000px;
+	margin-top: 160px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	background-color: #FFF;
+	position: relative;
+}
+#pie {
+	clear: both;
+	background-image: url(imagenes/fondopie.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	height: 120px;
+	padding: 10px;
+	position: relative;
+}
+#envoltorio #logo {
+	position: absolute;
+	z-index: 500;
+	left: 0px;
+	top: -150px;	
+}
+#nav {
+	height: 32px;
+	background-image: url(imagenes/fondo_menu.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;	
+}
+
+#nav ul li a {
+	height: 29px;
+	font-family: AvantGardeITCDemiRegular;
+	font-weight: lighter;
+	font-size: 18px;
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(imagenes/fondo-botones.png);
+	background-repeat: repeat-x;
+	background-position: 0px 0px;
+	display: block;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 3px;
+}
+
+#nav ul li a:hover, #nav ul li a.active {
+	color: #FC0;
+}
+
+.active {
+	color: #FC0;
+}
+
+
+#nav ul li {
+	float: left;
+	list-style-image: none;
+	list-style-type: none;
+	margin-right: 7px;
+		
+}
+
+#nav ul {
+	margin-left: 120px;
+	
+}
+#banner {
+	height: 200px;
+}
+#columnaIzquierda {
+	float: left;
+	width: 410px;
+	padding: 10px;
+	background-image: url(imagenes/fondolateral.jpg);
+	background-repeat: repeat-y;
+	background-position: 0px 0px;
+}
+#columnaDerecha {
+	background-color: #FFF;
+	float: right;
+	width: 550px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+}
+
+#columnaDerecha2 {
+	background-color: #FFF;
+	float: right;
+	width: 215px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+}
+
+
+#logos {
+	
+	width: 520px;
+}
+
+#pie #redessociales {
+	width: 190px;
+	position: absolute;
+	left: 520px;
+	top: 30px;
+	z-index: 500;
+	height: 120px;
+}
+
+
+#pie #newsletter {
+	
+	position: absolute;
+	left: 750px;
+	top: 10px;
+
+}
+#newsletter {
+	width: 250px;
+	padding-top: 20px;	
+
+}
+
+
+#pie input.mail {
+	background-color: #666;
+	margin-right: 5px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	color: #FFF;
+}
+
+
+
+/* TIPOGRAFÍAS */
+
+@font-face {
+    font-family: 'AvantGardeITCDemiRegular';
+    src: url('fonts/avantgardeitc-demi-webfont.eot');
+    src: url('fonts/avantgardeitc-demi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/avantgardeitc-demi-webfont.woff') format('woff'),
+         url('fonts/avantgardeitc-demi-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h3 {
+	font-family: AvantGardeITCDemiRegular;
+	font-weight: lighter;
+	font-size: 17px;
+	margin-top: 0px;
+}
+
+h4 {
+	font-family: AvantGardeITCDemiRegular;
+	font-weight: lighter;
+	font-size: 15px;
+	margin-top: 0px;
+	color: #FFF;
+	margin-bottom: 15px;
+}
+
+h1 {
+	font-family: AvantGardeITCDemiRegular;
+	color: #FFFFFF;
+	font-weight: lighter;
+	font-size: 17px;
+	
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	margin-top: 0px;
+}
+h2 {
+	font-family: AvantGardeITCDemiRegular;
+	color: #009EDF;
+	font-weight: lighter;
+	font-size: 17px;
+	background-image: url(imagenes/fondosh.jpg);
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	margin-top: 5px;
+}
+
+
+#columnaizquierda2 h2 {
+	background-image: url(imagenes/fondosh3.jpg);
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666;
+}
+
+p a {
+	color: #09F;
+	
+}
+
+p a:hover {
+	color: #000;
+	
+	text-decoration: none;
+}
+
+
+
+#columnaIzquierda p  {
+	color: #FFF;
+}
+
+.AccordionPanelContent ol li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+	margin-bottom: 10px;
+}
+
+#columnaIzquierda .AccordionPanelContent.AccordionPanelContent p a {
+	color: #CCC;
+}
+
+p.fecha {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #3CF;
+}
+
+p.contenido_mini_feed {
+    width: 530px;
+}
+
+p.contenido_feed {
+    width:800px;
+}
+p.leer_mas a {
+	background-color: #3CF;
+	padding-top: 2px;
+	padding-right: 1px;
+	padding-bottom: 2px;
+	padding-left: 1px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+p.leer_mas a:hover {
+	background-color: #66C;	
+}
+
+.TextoTabla {
+     color: #666666;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    text-align: right;
+    width:120px;
+}
+p.TextoAcordeon {
+    font-size:17px;
+}
+p.TextoAcordeonB {
+    font-size:16px;
+}
+h3 {
+	margin-bottom: 0px;
+}
+
+#mas a {
+	color: #FFF;
+	background-image: url(imagenes/fondomas.jpg);
+	font-family: AvantGardeITCDemiRegular;
+	display: block;
+	font-size: 15px;
+	text-decoration: none;
+	padding-right: 3px;
+}
+
+#mas a:hover {
+	color: #0CF;
+}
+
+#mas {
+	clear: both;
+	float: right;
+	width: 300px;
+	text-align: right;
+	margin-top: 10px;	
+}
+
+
+
+/* FEEDS */
+
+
+#feed {
+	clear: both;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	margin-bottom: 15px;
+	display: inline-block;	
+}
+#imagen_feed {
+	float: left;
+	margin-bottom: 10px;
+	padding-right: 15px;
+	display: block;
+}
+
+#info_feed {
+	
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+/*PAGINA FEEDS*/
+
+#columnaizquierda2 {
+	float: left;
+	width: 750px;
+	padding: 10px;
+	
+}
+
+#columnaizquierda2 #feed {
+	padding-bottom: 15px;	
+}
+
+#columnaizquierda2 #imagen_feed, #columnaizquierda2 #info_feed {
+	
+}
+
+
+
+#historico ul {
+	font-family: AvantGardeITCDemiRegular;
+	font-weight: lighter;
+	font-size: 17px;
+	padding-left: 0px;
+	margin-bottom: 5px;
+}
+
+#historico li {
+	margin-left: 0px;
+	padding-left: 0px;
+	list-style-image: none;
+	list-style-type: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#historico li a {
+	color: #09F;
+	text-decoration: none;
+}
+
+#historico li a:hover {
+	color: #000;
+}
+
+#conciertos {
+	clear: both;
+	margin-bottom: 50px;	
+}
+
+#conciertos tr td {
+	padding-right: 12px;
+}
+
+#preconciertos {
+	background-image: url(imagenes/fondoconcierto.jpg);
+	height: 178px;
+	width: 175px;
+	position: relative;
+        float:left;
+        margin-right:10px;
+}
+
+#preconciertos #diames {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 40px;
+	color: #FFF;
+	font-weight: bold;
+	line-height: 34px;	
+}
+
+#preconciertos #mes  {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #FFF;
+	
+	font-weight: bold;
+	
+}
+
+#preconciertos #fechaconciertos {
+	text-align: center;
+	width: 60px;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+#preconciertos #barrita {
+	color: #58595B;	
+	position: absolute;
+	top: 69px;	
+	left: 10px;
+        width: 200px;	
+        height:20px;
+}
+
+#preconciertos #gruposconciertos {
+	color: #FFF;
+	font-family: AvantGardeITCDemiRegular;
+	font-size: 13px;
+	width: 95px;
+	position: absolute;
+	left: 73px;
+	top: 5px;
+	vertical-align: middle;
+	height: 50px;
+}
+
+#preconciertos #infoconciertos p {
+	color: #FFF;
+	font-family: AvantGardeITCDemiRegular;
+	font-size: 13px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#infoconciertos p {
+	font-family: AvantGardeITCDemiRegular;
+	font-size: 13px;
+	
+}
+
+#infoconciertos_pagina #infoconciertos {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+}
+
+#infoconciertos_pagina {
+	
+	width: 315px;
+	float: right;
+}
+
+#concierto_pagina #foto_grupo {
+	float: left;
+	padding-right: 10px;
+}
+
+#infoconciertos_pagina #infoconciertos p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+
+	color: #09F;
+}
+
+#concierto_pagina {
+	display: inline-block;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+
+
+#preconciertos #infoconciertos {
+	left: 15px;
+	top: 92px;
+	position: absolute;
+}
+
+.etiqueta {
+	color: #58595B;
+}
+
+p a.reservar {
+	font-family: AvantGardeITCDemiRegular;
+    font-size: 13px;
+	text-decoration: none;
+	background-image: url(imagenes/reservar.png);
+	height: 20px;
+	width: 157px;
+	color: #FFF;
+	text-align: center;
+	display: block;
+}
+
+#preconciertos #infoconciertos p a.reservar {
+	
+	position: absolute;
+	left: -5px;
+	top: 58px;
+}
+
+p a.reservar:hover {
+	background-image: url(imagenes/reservar2.png);
+}
+
+
+
+#slider{}	
+#slider ul, #slider li{
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+#slider li{ 
+	width:410x;
+	height:200px;
+	overflow:hidden; 
+	}
